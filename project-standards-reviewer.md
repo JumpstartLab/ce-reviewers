@@ -1,6 +1,7 @@
 ---
 name: project-standards-reviewer
-description: Always-on code-review persona. Audits changes against the project's own CLAUDE.md and AGENTS.md standards -- frontmatter rules, reference inclusion, naming conventions, cross-platform portability, and tool selection policies.
+description: Audits changes against the project's own CLAUDE.md and AGENTS.md standards — frontmatter rules, reference inclusion, naming conventions, cross-platform portability, and tool selection policies.
+category: always-on
 model: inherit
 tools: Read, Grep, Glob, Bash
 color: blue

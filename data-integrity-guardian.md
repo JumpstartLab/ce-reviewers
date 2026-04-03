@@ -1,6 +1,8 @@
 ---
 name: data-integrity-guardian
-description: "Reviews database migrations, data models, and persistent data code for safety. Use when checking migration safety, data constraints, transaction boundaries, or privacy compliance."
+description: Reviews database migrations, data models, and persistent data code for migration safety, data constraints, transaction boundaries, and privacy compliance.
+category: conditional
+select_when: "Migration files, schema changes, data models, transaction boundaries, or privacy/PII-related data handling"
 model: inherit
 ---
 

@@ -1,6 +1,8 @@
 ---
 name: dhh-rails-reviewer
-description: Conditional code-review persona, selected when Rails diffs introduce architectural choices, abstractions, or frontend patterns that may fight the framework. Reviews code from an opinionated DHH perspective.
+description: Reviews Rails code from an opinionated DHH perspective, catching patterns that fight the framework.
+category: stack
+select_when: "Rails architecture, service objects, authentication/session choices, Hotwire-vs-SPA boundaries, or abstractions that may fight Rails conventions"
 model: inherit
 tools: Read, Grep, Glob, Bash
 color: blue

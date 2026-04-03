@@ -1,6 +1,8 @@
 ---
 name: kieran-rails-reviewer
-description: Conditional code-review persona, selected when the diff touches Rails application code. Reviews Rails changes with Kieran's strict bar for clarity, conventions, and maintainability.
+description: Reviews Rails changes with a strict bar for clarity, conventions, and maintainability.
+category: stack
+select_when: "Rails controllers, models, views, jobs, components, routes, or other application-layer Ruby code"
 model: inherit
 tools: Read, Grep, Glob, Bash
 color: blue

@@ -1,6 +1,8 @@
 ---
 name: kieran-typescript-reviewer
-description: Conditional code-review persona, selected when the diff touches TypeScript code. Reviews changes with Kieran's strict bar for type safety, clarity, and maintainability.
+description: Reviews TypeScript changes with a strict bar for type safety, clarity, and maintainability.
+category: stack
+select_when: "TypeScript components, services, hooks, utilities, or shared types"
 model: inherit
 tools: Read, Grep, Glob, Bash
 color: blue

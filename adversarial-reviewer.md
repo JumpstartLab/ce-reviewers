@@ -1,6 +1,8 @@
 ---
 name: adversarial-reviewer
-description: Conditional code-review persona, selected when the diff is large (>=50 changed lines) or touches high-risk domains like auth, payments, data mutations, or external APIs. Actively constructs failure scenarios to break the implementation rather than checking against known patterns.
+description: Actively constructs failure scenarios to break the implementation rather than checking against known patterns.
+category: conditional
+select_when: "Diff has >=50 changed non-test, non-generated, non-lockfile lines, OR touches auth, payments, data mutations, external API integrations"
 model: inherit
 tools: Read, Grep, Glob, Bash
 color: red

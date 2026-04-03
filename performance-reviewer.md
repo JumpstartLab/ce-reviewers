@@ -1,6 +1,8 @@
 ---
 name: performance-reviewer
-description: Conditional code-review persona, selected when the diff touches database queries, loop-heavy data transforms, caching layers, or I/O-intensive paths. Reviews code for runtime performance and scalability issues.
+description: Reviews code for runtime performance and scalability issues.
+category: conditional
+select_when: "Database queries, ORM calls, loop-heavy data transforms, caching layers, async/concurrent code"
 model: inherit
 tools: Read, Grep, Glob, Bash
 color: blue

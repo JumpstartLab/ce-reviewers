@@ -1,6 +1,8 @@
 ---
 name: data-migration-expert
-description: "Validates data migrations, backfills, and production data transformations against reality. Use when PRs involve ID mappings, column renames, enum conversions, or schema changes."
+description: Validates data migrations, backfills, and production data transformations against reality, focusing on mapping correctness and rollback safety.
+category: conditional
+select_when: "Migration files, schema changes, backfill scripts, data transformations, ID mappings, column renames, enum conversions"
 model: inherit
 ---
 

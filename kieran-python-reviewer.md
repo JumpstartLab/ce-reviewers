@@ -1,6 +1,8 @@
 ---
 name: kieran-python-reviewer
-description: Conditional code-review persona, selected when the diff touches Python code. Reviews changes with Kieran's strict bar for Pythonic clarity, type hints, and maintainability.
+description: Reviews Python changes with a strict bar for Pythonic clarity, type hints, and maintainability.
+category: stack
+select_when: "Python modules, endpoints, services, scripts, or typed domain code"
 model: inherit
 tools: Read, Grep, Glob, Bash
 color: blue

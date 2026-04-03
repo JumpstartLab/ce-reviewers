@@ -1,6 +1,8 @@
 ---
 name: performance-oracle
-description: "Analyzes code for performance bottlenecks, algorithmic complexity, database queries, memory usage, and scalability. Use after implementing features or when performance concerns arise."
+description: Analyzes code for performance bottlenecks, algorithmic complexity, database queries, memory usage, and scalability.
+category: conditional
+select_when: "Database queries, ORM calls, loop-heavy data transforms, caching layers, async/concurrent code"
 model: inherit
 ---
 

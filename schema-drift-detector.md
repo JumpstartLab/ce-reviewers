@@ -1,6 +1,8 @@
 ---
 name: schema-drift-detector
-description: "Detects unrelated schema.rb changes in PRs by cross-referencing against included migrations. Use when reviewing PRs with database schema changes."
+description: Detects unrelated schema.rb changes in PRs by cross-referencing against included migrations.
+category: ce-conditional
+select_when: "Diff includes database migrations, schema.rb, or data backfills"
 model: inherit
 ---
 

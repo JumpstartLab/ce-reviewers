@@ -1,6 +1,8 @@
 ---
 name: julik-frontend-races-reviewer
-description: Conditional code-review persona, selected when the diff touches async UI code, Stimulus/Turbo lifecycles, or DOM-timing-sensitive frontend behavior. Reviews code for race conditions and janky UI failure modes.
+description: Reviews frontend code for race conditions and janky UI failure modes caused by timing, lifecycle, and async behavior.
+category: stack
+select_when: "Stimulus/Turbo controllers, DOM event wiring, timers, async UI flows, animations, or frontend state transitions with race potential"
 model: inherit
 tools: Read, Grep, Glob, Bash
 color: blue

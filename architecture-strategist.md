@@ -1,6 +1,8 @@
 ---
 name: architecture-strategist
-description: "Analyzes code changes from an architectural perspective for pattern compliance and design integrity. Use when reviewing PRs, adding services, or evaluating structural refactors."
+description: Analyzes code changes from an architectural perspective for pattern compliance and design integrity.
+category: conditional
+select_when: "Service boundaries, architectural patterns, inter-component dependencies, structural refactors, or abstractions that may fight established system design"
 model: inherit
 ---
 

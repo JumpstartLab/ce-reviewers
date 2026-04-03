@@ -1,6 +1,8 @@
 ---
 name: reliability-reviewer
-description: Conditional code-review persona, selected when the diff touches error handling, retries, circuit breakers, timeouts, health checks, background jobs, or async handlers. Reviews code for production reliability and failure modes.
+description: Reviews code for production reliability and failure modes.
+category: conditional
+select_when: "Error handling, retry logic, circuit breakers, timeouts, background jobs, async handlers, health checks"
 model: inherit
 tools: Read, Grep, Glob, Bash
 color: blue

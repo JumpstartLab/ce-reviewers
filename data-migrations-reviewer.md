@@ -1,6 +1,8 @@
 ---
 name: data-migrations-reviewer
-description: Conditional code-review persona, selected when the diff touches migration files, schema changes, data transformations, or backfill scripts. Reviews code for data integrity and migration safety.
+description: Reviews code for data integrity and migration safety during deployment windows.
+category: conditional
+select_when: "Migration files, schema changes, backfill scripts, data transformations"
 model: inherit
 tools: Read, Grep, Glob, Bash
 color: blue

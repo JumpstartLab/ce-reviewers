@@ -1,6 +1,8 @@
 ---
 name: previous-comments-reviewer
-description: Conditional code-review persona, selected when reviewing a PR that has existing review comments or review threads. Checks whether prior feedback has been addressed in the current diff.
+description: Checks whether prior review feedback has been addressed in the current diff.
+category: conditional
+select_when: "PR-only — reviewing a PR that has existing review comments or threads from prior rounds"
 model: inherit
 tools: Read, Grep, Glob, Bash
 color: yellow
